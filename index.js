@@ -26,10 +26,10 @@ recognition.addEventListener('result', event => {
 
     if(event.results[0].isFinal) {
       para = document.createElement('p');
-      words.appendChild(para)
+      words.appendChild(para);
     }
-    
-});
+
+  });
 
 recognition.addEventListener('end', recognition.start);
 
