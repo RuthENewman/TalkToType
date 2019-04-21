@@ -28,8 +28,7 @@ recognition.addEventListener('result', event => {
       para = document.createElement('p');
       words.appendChild(para)
     }
-
-    }
+    
 });
 
 recognition.addEventListener('end', recognition.start);
