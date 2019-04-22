@@ -21,7 +21,8 @@ recognition.addEventListener('result', event => {
     }
 
     if(transcript.includes('light')){
-      transcript.replace(/light/gi, '💡');
+      const lightScript = transcript.replace(/light/gi, '💡');
+      para.textContent = lightScript;
     }
 
     if(event.results[0].isFinal) {
