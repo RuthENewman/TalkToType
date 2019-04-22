@@ -20,8 +20,8 @@ recognition.addEventListener('result', event => {
       console.log('💡💡💡💡💡💡💡💡')
     }
 
-    if(transcript.includes('light bulb')){
-      transcript.replace(/idea/gi, '💡');
+    if(transcript.includes('light')){
+      transcript.replace(/light/gi, '💡');
     }
 
     if(event.results[0].isFinal) {
