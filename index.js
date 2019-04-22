@@ -14,7 +14,7 @@ recognition.addEventListener('result', event => {
     .map(result => result.transcript)
     .join('')
 
-    para.textContent = transcript;
+    para.textContent = speechToType;
 
     if(speechToType.includes('idea')) {
       console.log('💡💡💡💡💡💡💡💡')
