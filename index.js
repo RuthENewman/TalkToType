@@ -9,19 +9,19 @@ const words = document.querySelector('.words');
 words.appendChild(para);
 
 recognition.addEventListener('result', event => {
-  const speechToType = Array.from(event.results)
+  const transcript = Array.from(event.results)
     .map(result => result[0])
     .map(result => result.transcript)
     .join('')
 
-    para.textContent = speechToType;
+    para.textContent = transcript;
 
-    if(speechToType.includes('idea')) {
+    if(transcript.includes('idea')) {
       console.log('💡💡💡💡💡💡💡💡')
     }
 
-    if(speechToType.includes('lightbulb')){
-      speechToType.replace(/idea/gi, '💡');
+    if(transcript.includes('lightbulb')){
+      transcript.replace(/idea/gi, '💡');
     }
 
     if(event.results[0].isFinal) {
