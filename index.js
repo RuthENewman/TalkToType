@@ -20,7 +20,7 @@ recognition.addEventListener('result', event => {
       console.log('💡💡💡💡💡💡💡💡')
     }
 
-    if(transcript.includes('lightbulb')){
+    if(transcript.includes('light bulb')){
       transcript.replace(/idea/gi, '💡');
     }
 
